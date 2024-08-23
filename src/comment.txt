@@ -1,0 +1,23 @@
+const cuisineRef = useRef()
+
+<div className="flex justify-evenly px-8 overflow-x-auto no-scrollbar scroll-smooth scroll-container" ref={cuisineRef}>
+        {recipeData.slice(0,cuisineCount).map((obj) => {
+          return <Cuisine obj={obj} key={obj.id}></Cuisine>
+        })}
+      </div>
+
+
+
+
+//CSS:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+
+why is this not working
